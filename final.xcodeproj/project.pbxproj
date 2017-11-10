@@ -14,6 +14,7 @@
 		BE6E4F8D1F942D3D001BE33F /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6E4F8C1F942D3D001BE33F /* MyViewController.swift */; };
 		BE6E4F8F1F942D76001BE33F /* default.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6E4F8E1F942D76001BE33F /* default.xib */; };
 		BE6E4F911F943232001BE33F /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6E4F901F943232001BE33F /* MyData.swift */; };
+		BE8C76991FB544F5007E2E34 /* final.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE8C76971FB544F5007E2E34 /* final.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BE6E4F8C1F942D3D001BE33F /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		BE6E4F8E1F942D76001BE33F /* default.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = default.xib; sourceTree = "<group>"; };
 		BE6E4F901F943232001BE33F /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
+		BE8C76981FB544F5007E2E34 /* final.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = final.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			children = (
 				BE6E4F7B1F942CD9001BE33F /* Assets.xcassets */,
 				BE6E4F901F943232001BE33F /* MyData.swift */,
+				BE8C76971FB544F5007E2E34 /* final.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8C76991FB544F5007E2E34 /* final.xcdatamodeld in Sources */,
 				BE6E4F891F942D1B001BE33F /* MyCollectionViewController.swift in Sources */,
 				BE6E4F751F942CD9001BE33F /* AppDelegate.swift in Sources */,
 				BE6E4F8D1F942D3D001BE33F /* MyViewController.swift in Sources */,
@@ -327,6 +331,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE8C76971FB544F5007E2E34 /* final.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE8C76981FB544F5007E2E34 /* final.xcdatamodel */,
+			);
+			currentVersion = BE8C76981FB544F5007E2E34 /* final.xcdatamodel */;
+			path = final.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BE6E4F691F942CD9001BE33F /* Project object */;
 }

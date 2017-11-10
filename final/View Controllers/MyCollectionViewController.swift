@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 private let reuseIdentifier = "MyCell"
 
@@ -64,6 +65,55 @@ class MyCollectionViewController: UICollectionViewController, UICollectionViewDe
         array.append(record)
         array.sort { $0.name < $1.name }
         collectionView?.reloadData()
+    }
+    
+    func loadUsers() {
+        
+        let appDelegate =  UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let person = Person(context: context)
+        let address = Address(context: context)
+        
+        person.age = 21
+        person.gender = true
+        person.name = "Simon Says"
+        person.personID = UUID()
+        person.address = address
+        
+        let request : NSFetchRequest<Person> = Person.fetchRequest()
+        
+        guard let results = try? context.fetch(request) else {
+            print ("No Results")
+            return
+        }
+        
+        for result in results {
+            let name = result.name
+            let age = result.age
+            let gender = result.gender
+            let id = result.personID
+        }
+        
+        
+    }
+    
+    func saveUsers() {
+        
+        let appDelegate =  UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let person = Person(context: context)
+        let address = Address(context: context)
+        
+        person.age = 21
+        person.gender = true
+        person.name = "Simon Says"
+        person.personID = UUID()
+        person.address = address
+        
+        try? context.save()
+
     }
     
 
